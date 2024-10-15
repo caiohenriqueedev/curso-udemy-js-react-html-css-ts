@@ -13,3 +13,21 @@ p{
 /* algum comentario */
 /*outro comentario */
 /* terceiro comentario */
+
+/* ids */
+#exclusive-title {
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+    font-size: 40px;
+
+}
+
+/* ordem das regras */
+h2{
+    border-bottom: 2px solid
+}
+
+.titulo {
+    border-bottom: 3px solid blue;
+}
