@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div>
+        <h2>formularios HTML</h2>
+
+        <!-- 1 - primeiro forumlario  -->
+        <!-- 2 - atributos do formulario -->
+        <form action="register.php" method="POST">
+
+        </form>
+        <form>
+            <label> nome:</label>
+            <input type="text">
+    </div>
+    <!-- 3 - atributo name -->
+    <div>
+
+        <!-- 4 - atributo label -->
+        <label>Idade:</label>
+        <input type="text" name="age" />
+    </div>
+
+    <!-- 6 - select -->
+    <div>
+        <label for="job">Selecione a sua profissão:</label>
+        <select name="job">
+            <option value="programador">programador</option>
+            <option value="tester">tester q/a</option>
+            <option value="devops">devops</option>
+        </select>
+    </div>
+    <!-- 7 - atributo selected -->
+    <div>
+        <label for="contract">voce leu os termos de contrato?</label>
+        <select name="contract">
+            <option value="sim">sim</option>
+            <option value="nao" selected>não</option>
+
+        </select>
+    </div>
+
+    <!-- 8 - multiplas opções -->
+    <div>
+        <label for="items">selecione os itens desejados:</label>
+        <select name="items" multiple>
+            <option value="pera">pera</option>
+            <option value="arroz">arroz</option>
+            <option value="milho">milho</option>
+            <option value="feijao">feijao</option>
+        </select>
+    </div>
+
+    <!-- 9 - textarea -->
+    <div>
+        <label for="comment">escreva abaixo o que voce achou do post:</label>
+        <textarea name="comment" cols="30" rows="10"></textarea>
+    </div>
+
+    <!-- 10 - fieldset e legend -->
+    <div>
+        <fieldset>
+            <legend>preencha as suas informações:</legend>
+            <label for="firstname">nome:</label>
+            <input type="text" name="firstname">
+            <label for="lastname">sobrenome</label>
+            <input type="text" name="lastname">
+        </fieldset>
+    </div>
+    <!-- 11 - datalist -->
+    <div>
+        <label for="flavor">escolha o sabor:</label>
+        <input type="text" list="flavors" name="flavor">
+
+        <datalist id="flavors">
+            <option value="cereja"></option>
+            <option value="morango"></option>
+            <option value="abacaxi"></option>
+            <option value="chocolate"></option>
+        </datalist>
+    </div>
+    <!-- 12 - senha -->
+    <div>
+        <label for="password">digite a sua senha:</label>
+        <input type="password" name="password">
+    </div>
+
+    <!-- 13 - resetar forms -->
+    <input type="reset" value="limpar">
+
+    <!--14 - raddio button  -->
+    <div>
+        <label for="car_model">escolha o modelo do seu carro:</label>
+        <div class="radio">
+            <input type="radio" value="bmw" name="car_model">
+            <label for="bmw">BMW</label>
+
+            <div class="radio">
+                <input type="radio" value="FERRARI" name="car_model">
+                <label for="FERRARI">ferrari</label>
+
+                <div class="radio">
+                    <input type="radio" value="AUD" name="car_model">
+                    <label for="AUD">AUD</label>
+                </div>
+            </div>
+
+            <!-- 15 - checkbox -->
+            <div>
+                <label for="optinals">opcionais de carro:</label>
+                <div class="radio">
+                    <input type="checkbox" name="opcionals[]" value="big_tires">
+                    <label for="big_tires">pneus grandes</label>
+                </div>
+
+                <div class="radio">
+                    <input type="checkbox" name="opcionals[]" value="turbo_engine">
+                    <label for="turbo_engine">motor turbo</label>
+                </div>
+
+                <div class="radio">
+                    <input type="checkbox" name="opcionals[]" value="hybrid">
+                    <label for="hybrid">hibrido</label>
+                </div>
+
+                <!-- 16 - datas -->
+                <div>
+                    <label for="birthday">data de nascimento</label>
+                    <input type="date" name="birthday">
+                </div>
+            </div>
+
+            <!-- 17 - input para arquivos -->
+            <div>
+                <label for="image">insira a sua imagem:</label>
+                <input type="file" name="image">
+            </div>
+
+            <!-- 18 - input para numeros -->
+            <div>
+                <label for="salary">quanto voce ganha no seu emoprego atual</label>
+                <input type="number" name="salary">
+            </div>
+
+            <!-- 19 - input para emails -->
+            <div>
+                <label for="email">digite seu email:</label>
+                <input type="email" name="email" id="">
+            </div>
+
+            <!-- 20 - values -->
+            <div>
+                <label for="value">digite algum valor:</label>
+                <input type="value" value="o meu valor é" name="value">
+            </div>
+
+            <!-- 21 - disabled -->
+            <div>
+                <p>tente mudar o valor:</p>
+                <input type="text" disabled value="nao precisa preencher aqui">
+            </div>
+
+            <!-- 22 - placeholder -->
+            <div>
+                <label for="currentjob">digite sua profissão:</label>
+                <input type="text" name="currentjob" placeholder="no que voce esta trabalhando atualmente?">
+            </div>
+
+            <!-- 23 - required -->
+            <div>
+                <label for="birtyear">digite seu ano de nascimento:</label>
+                <input type="text" placeholder="digite o ano do seu nascimento:" required>
+            </div>
+
+            <!-- 5 - envio de form -->
+            <input type="submit" value="enviar" />
+            </form>
+</body>
+
+</html>
