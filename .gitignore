@@ -1,0 +1,24 @@
+# Ignorar diretórios específicos
+1_introducao/
+3_CSSbasico/
+4_tributo/
+5_formularios/
+6_form_project/
+7_responsividade/
+
+# Ignorar arquivos específicos
+README.md
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de compilação (caso use Node.js, React, etc.)
+node_modules/
+dist/
+build/
+
+# Ignorar arquivos temporários do editor (caso use VS Code, etc.)
+.vscode/
+.idea/
+*.log
