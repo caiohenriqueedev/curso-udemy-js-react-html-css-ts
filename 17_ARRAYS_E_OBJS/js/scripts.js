@@ -81,5 +81,79 @@ console.log(car);
 // 7 - mais sobre objetos
 
 const obj = {
-    
+    a: "teste",
+    b: true,    
+};
+
+console.log(obj instanceof Object);
+
+const objs2 = {
+    c: [],
+};
+
+Object.assign(objs2, obj);
+
+console.log(obj);
+
+console.log(objs2);
+
+// 8 - conhecendo melhor os objetos
+console.log(Object.keys(obj));
+console.log(Object.keys(objs2));
+console.log(Object.keys(car));
+
+console.log(Object.entries(car));
+
+// 9 - mutação
+const a = {
+    name: "Matheus"
 }
+
+const b = a;
+
+console.log(a);
+console.log(b);
+
+console.log(a === b);
+
+a.age = 31;
+
+console.log(b);
+
+delete b.age
+
+console.log(b);
+console.log(a);
+
+// 10 - loop em array
+
+const users = ["Matheus", "João", "Pedro", "Miguel"]
+
+for(let i = 0; i < users.length; i++){
+    console.log(`Listando o usuario ${users[i]}`);
+}
+
+// 11 - push e pop
+const array = ["a", "b", "c"];
+
+array.push("d");
+
+console.log(array);
+
+console.log(array.length);
+
+array.pop();
+
+console.log(array);
+
+const itemRemovido = array.pop();
+
+console.log(itemRemovido);
+
+console.log(array);
+
+array.push("z", "x", "y");
+
+console.log(array);
+
+// 12 - shift e unshift
