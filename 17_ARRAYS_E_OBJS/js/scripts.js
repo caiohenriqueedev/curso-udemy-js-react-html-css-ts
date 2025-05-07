@@ -168,6 +168,117 @@ console.log(letters);
 
 letters.unshift("p", "q", "r");
 
-letter.unshift("z");
+letters.unshift("z");
 
 console.log(letters);
+
+// 13 - indexOf e lastIndexOf
+const myElements = ["Morango", "Maçã", "Abacate", "Perâ", "Abacate"];
+
+console.log(myElements.indexOf("Maçã"));
+console.log(myElements.indexOf("Abacate"));
+
+console.log(myElements[2]);
+console.log(myElements[myElements.indexOf("Abacate")]);
+
+console.log(myElements.lastIndexOf("Abacate"));
+
+console.log(myElements.lastIndexOf("Mamão"));
+
+// 14 - slice
+const testeSlice = ["a", "b", "c","d","e","f"];
+
+const subArray = testeSlice.slice(2,4);
+
+console.log(subArray);
+
+console.log(testeSlice);
+
+const subArray2 = testeSlice.slice(2 + 4 + 1);
+
+console.log(subArray2);
+
+const subArray3 = testeSlice.slice(10, 20);
+
+console.log(subArray3);
+
+const subArray4 = testeSlice.slice(2);
+
+console.log(subArray4);
+
+// 15 - foreach
+const nums = [1, 2, 3, 4, 5];
+
+nums.forEach((numero)=>{
+    console.log(`O numero é ${numero}`);
+});
+
+const posts = [
+    {title: "primeiro post", category: "PHP"},
+    {title: "segundo post", category: "JavaScript"},
+    {title: "terceiro post", category: "Python"},
+];
+
+posts.forEach((post) => {
+    console.log(`exibindo post: ${post.title}, da categoria ${post.category}`);
+});
+
+// 16 - includes
+const brands = ["BMW", "VW", "Fiat"];
+
+console.log(brands.includes("Fiat"));
+
+console.log(brands.includes("KIA"));
+
+if(brands.includes("BMW")){
+    console.log("há carros dessa marca BMW!");
+}
+
+// 17 - reverse
+const reverseTest = [1,2,3,4,5]
+
+reverseTest.reverse();
+
+console.log(reverseTest);
+
+// 18 - trim
+const trimTest = "testando \n";
+
+console.log(trimTest);
+
+console.log(trimTest.trim());
+
+console.log(trimTest.length);
+
+console.log(trimTest.trim().length);
+
+// 19 - padstart
+const testePadStart = "1";
+
+const newNumber = testePadStart.padStart(4, "0");
+
+console.log(testePadStart);
+
+console.log(newNumber);
+
+const testePadEnd = newNumber.padEnd(10, "0");
+
+console.log(testePadEnd);
+
+// 20 - split
+const frase = "o rato roeu a roupa do rei de roma";
+
+const arrayDaFrase = frase.split(" ");
+
+console.log(arrayDaFrase);
+
+// 20 - join
+const FraseDeNovo = arrayDaFrase.join("");
+
+console.log(FraseDeNovo);
+
+const itensParaComprar = ["Mouse", "Teclado","Monitor"];
+
+const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(",")}.`;
+
+console.log(fraseDeCompra);
