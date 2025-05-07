@@ -279,6 +279,6 @@ console.log(FraseDeNovo);
 
 const itensParaComprar = ["Mouse", "Teclado","Monitor"];
 
-const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(",")}.`;
+const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(", ")}.`;
 
 console.log(fraseDeCompra);
