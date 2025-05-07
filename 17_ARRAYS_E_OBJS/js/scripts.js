@@ -172,6 +172,7 @@ letters.unshift("z");
 
 console.log(letters);
 
+<<<<<<< HEAD
 // 13 - indexOf e lastIndexOf
 const myElements = ["Morango", "Maçã", "Abacate", "Perâ", "Abacate"];
 
@@ -282,3 +283,9 @@ const itensParaComprar = ["Mouse", "Teclado","Monitor"];
 const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(",")}.`;
 
 console.log(fraseDeCompra);
+=======
+// 13 - IndexOf e lastIndexOf
+const MyElements = ["Morango", "Maçã", "Abacate", "Pêra", "Abacate"];
+
+console.log(MyElements.indexOf("Maçã"));
+>>>>>>> e7b169b6b9f15bca2281a8e2475672c1f2d2f2b5
