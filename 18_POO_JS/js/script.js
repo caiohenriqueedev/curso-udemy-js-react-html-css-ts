@@ -1,6 +1,118 @@
 // 1 - metodos
 const animal = {
-    nome: "Bob"
-}
+    nome: "Bob",
+    latir: function(){
+    console.log("au au");
+
+    },
+};
 
 console.log(animal.nome);
+
+animal.latir();
+
+// 2 - aprofudando em métodos
+const Pessoa = {
+    nome: "Matheus",
+
+    getNome: function(){
+        return this.nome;
+    },
+};
+
+console.log(Pessoa.nome);
+
+console.log(Pessoa.getNome());
+
+Pessoa.getNome("Joaquim");
+
+console.log(Pessoa.getNome());
+
+// 3 - prototype
+const text = "asd";
+
+console.log(Object.getPrototypeOf(text));
+
+const bool = true;
+
+console.log(Object.getPrototypeOf(bool));
+
+const arr = [];
+
+console.log(Object.getPrototypeOf(arr));
+
+// 4 - mais sobre prototype
+const myObject = {
+    a: "b",
+};
+
+console.log(Object.getPrototypeOf(myObject));
+
+console.log(Object.getPrototypeOf(myObject) === Object.prototype);
+
+const mySecondObject = Object.create(myObject);
+
+console.log(mySecondObject);
+
+console.log(mySecondObject.a);
+
+console.log(Object.getPrototypeOf(mySecondObject) === myObject);
+
+// 5 - classes basicas
+const cachorro = {
+    raca: null,
+    patas: 4
+};
+
+const pastorAlemao = Object.create(cachorro);
+
+pastorAlemao.raca = "Pastor Alemão";
+
+console.log(pastorAlemao);
+
+console.log(pastorAlemao.patas);
+
+const bulldog = Object.create(cachorro);
+
+bulldog.raca = "Bulldog";
+
+console.log(bulldog);
+
+// 6 - função como classe - função construtora
+function criarCachorro(nome, raca){
+    const cachorro = Object.create({})
+
+    cachorro.nome = nome
+    cachorro.raca = raca
+
+    return cachorro
+};
+
+const bob = criarCachorro("Bob", "Vira-Lata");
+
+console.log(bob);
+
+const jack = criarCachorro("Jack", "Poodle");
+
+console.log(jack);
+
+console.log(Object.getPrototypeOf(jack));
+
+// 7 - funções como classe
+function Cachorro(nome, raca){
+    this.nome = nome
+    this.raca = raca
+}
+
+const husky = new Cachorro("Ozzy", "Husky");
+
+console.log(husky);
+
+// 8 - metodos na funcao construtora
+Cachorro.prototype.uivar = function(){
+    console.log("auuuuuuuu!");
+    };
+
+    console.log(Cachorro.prototype);
+
+    husky.uivar();
