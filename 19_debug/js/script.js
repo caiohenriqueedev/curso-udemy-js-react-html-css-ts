@@ -70,4 +70,48 @@ console.log("valor correto!");
 return result;
 }
 
-checkNumber
+checkNumber(5);
+checkNumber("10");
+checkNumber("{}");
+checkNumber("teste");
+
+// 5 - exceptions
+let x = 10
+
+if(x != 11){
+    // throw new Error("O valor de x não pode ser diferente de 11!");
+
+}
+
+// 6 - try catch
+try {
+    const soma = x + y;
+} catch (error){
+    console.log(`erro no programa: ${error}`);
+}
+
+// 7 - finally
+try {
+    const value = checkNumber("1");
+
+    if(!value){
+        throw new Error("valores invalidos")
+    }
+} catch(error){
+    console.log(`opa, aconteceu um problema: ${error}`);
+}finally{
+    console.log("o codigo foi executado!")
+}
+
+// 8 - assertion
+function checkArray(arr){
+    if(arr.length === 0){
+        throw new error("o array precisa ter elementos");
+    } else{
+        console.log(`o array tem ${arr.length} elementos`);
+    }
+}
+
+// checkarray([]);
+
+checkArray([1,2,3]);
