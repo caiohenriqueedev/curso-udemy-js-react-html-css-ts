@@ -55,6 +55,41 @@ console.log(greeting());
 const user = {
     name: "Theo",
     sayUserName(){
-        setTimeout
+        setTimeout(function(){
+            console.log(this);
+            console.log(`username: ${this.name}`);
+
+        }, 1000);
+    },
+    sayUserNameArrow(){
+        setTimeout(() => {
+            console.log(this);
+            console.log(`Username: ${this.name}`);
+        }, 2000);
+    },
+};
+
+user.sayUserName();
+
+// 3 - filter
+const arr = [1,2,3,4,5,6];
+
+const highNumbers = arr.filter((n) => {
+    if(n >= 3){
+        return n
     }
-}
+});
+
+console.log(highNumbers);
+
+const users = [
+    {name: "Matheus", available: true},
+    {name: "João", available: false},
+    {name: "Maria", available: true},
+    {name: "Josias", available: false},
+    {name: "Kleber", available: true},
+]
+
+const availableUsers = users.filter((user) => user.available);
+
+console.log(availableUsers);
