@@ -93,3 +93,11 @@ const users = [
 const availableUsers = users.filter((user) => user.available);
 
 console.log(availableUsers);
+
+// 4 - map
+const products = [
+    {name: "camisa", price: 10.99, category:"roupas"},
+    {name: "camisa", price: 10.99, category:"roupas"},
+    {name: "camisa", price: 10.99, category:"roupas"},
+    {name: "camisa", price: 10.99, category:"roupas"},
+]
