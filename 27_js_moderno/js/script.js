@@ -101,3 +101,4 @@ const products = [
     {name: "camisa", price: 10.99, category:"roupas"},
     {name: "camisa", price: 10.99, category:"roupas"},
 ]
+// teste
