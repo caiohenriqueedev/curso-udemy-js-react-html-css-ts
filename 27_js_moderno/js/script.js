@@ -195,5 +195,3 @@ const hat = new ProductWithAttributes("chapéu", 29.99, [
 console.log(hat);
 
 console.log(hat.name);
-
-// teste
