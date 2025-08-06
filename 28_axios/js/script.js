@@ -73,5 +73,3 @@ form.addEventListener("submit", (e) =>{
         body: {title: titleInput.value, body: bodyInput.value, userId: 1}
     });
 });
-
-// teste
