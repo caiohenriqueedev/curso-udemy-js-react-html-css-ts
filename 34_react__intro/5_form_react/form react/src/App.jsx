@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <h1>Form em react</h1>
-      <MyForm />
+      <MyForm userName="Matheus" email="matheushoradecodar@gmail.com"/>
     </div>
-  )
+  ) 
 }
 
 export default App
